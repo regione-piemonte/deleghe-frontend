@@ -1,0 +1,13 @@
+
+// Aggiungiamo i colori custom di brand sia come variabile (per usare gli helpers colors di Quasar)
+// sia come classi di sfondo e di testo per usarle come se fossero colori standard Quasar, cioè
+// anche passando nei componenti Quasar la prop 'color'
+for $key, $color in $csi-brand-colors
+  :root
+    --q-color-brand-{$key} $color
+
+  .bg-brand-{$key}
+    background-color $color
+
+  .text-brand-{$key}
+    color $color

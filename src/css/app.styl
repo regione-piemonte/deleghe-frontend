@@ -1,0 +1,34 @@
+// app global css
+@require '~variables'
+@require 'theme'
+@require 'typography'
+@require 'helpers'
+@require 'transitions'
+@require 'html-tags'
+@require 'overrides'
+@require 'components/*'
+
+
+.q-layout-page
+  min-height 60vh !important
+
+
+.csi-app-logo
+  width 100%
+  max-width 160px
+  height auto
+
+
+
+// RESPONSIVE
+// ---------------------------------------------------------------------------------------------------------------------
+@media (min-width: $breakpoint-sm)
+  .q-layout-page
+    max-width $breakpoint-sm
+    margin auto
+
+
+@media (min-width: $breakpoint-md)
+  .q-layout-page
+    max-width $breakpoint-md
+    margin auto

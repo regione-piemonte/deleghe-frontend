@@ -1,0 +1,37 @@
+
+blockquote
+  @extend .csi-text
+  font-style italic
+  border-left: 8px solid $primary;
+
+ul
+ol
+  list-style none
+  padding-left 24px
+  margin 0
+
+
+  li
+    margin 8px 0
+    position relative
+
+  li::before
+    color $primary
+    display inline-block
+
+ul
+  li::before
+    content "\2022"
+    font-weight bold
+    position absolute
+    transform translateX(-200%)
+
+ol
+  counter-reset ordered-list-item
+
+  li::before
+    counter-increment: ordered-list-item
+    content counter(ordered-list-item) "."
+    font-weight normal
+    position absolute
+    transform translateX(-150%)

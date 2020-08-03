@@ -12,7 +12,7 @@
     "build:production:spa": "cross-env BUILD_ENVIRONMENT=production quasar build -c -m spa"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "date-fns": "^1.29.0",
     "portal-vue": "^1.3.0",
     "vue-i18n": "^8.0.0",
